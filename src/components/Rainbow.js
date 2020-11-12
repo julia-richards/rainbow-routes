@@ -6,14 +6,18 @@ import Blue from "./Blue";
 import Violet from "./Violet";
 
 const Rainbow = () => (
-	<div>
-		<h1>Rainbow Router</h1>
-		<div id="rainbow"></div>
-		<Route path="/red" component={Red} />
-		<Route path="/green" component={Green} />
-		<Route path="/blue" component={Blue} />
-		<Route path="/violet" component={Violet} />
-	</div>
+  <div>
+    <h1>Rainbow Router</h1>
+    <NavLink to="/red">Red</NavLink>
+    <NavLink to="/green">Green</NavLink>
+    <NavLink to="/blue">Blue</NavLink>
+    <NavLink to="/violet">Violet</NavLink>
+    <div id="rainbow"></div>
+    <Route path="/red" component={Red} />
+    <Route path="/green" component={Green} />
+    <Route path="/blue" component={Blue} />
+    <Route path="/violet" component={Violet} />
+  </div>
 );
 
 export default Rainbow;
