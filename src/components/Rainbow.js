@@ -5,13 +5,13 @@ import Green from "./Green";
 import Blue from "./Blue";
 import Violet from "./Violet";
 
-const Rainbow = () => (
+const Rainbow = (props) => (
   <div>
     <h1>Rainbow Router</h1>
-    <NavLink to="/red">Red</NavLink>
-    <NavLink to="/green">Green</NavLink>
-    <NavLink to="/blue">Blue</NavLink>
-    <NavLink to="/violet">Violet</NavLink>
+    <NavLink to="/red" activeClassName="parent-active" >Red</NavLink>
+    <NavLink to="/green" activeClassName="parent-active" >Green</NavLink>
+    <NavLink to="/blue" activeClassName="parent-active" >Blue</NavLink>
+    <NavLink to="/violet" activeClassName="parent-active" >Violet</NavLink>
     <div id="rainbow"></div>
     <Route path="/red" component={Red} />
     <Route path="/green" component={Green} />
